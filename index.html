@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos | Portfolio</title>
+  <link rel="shortcut icon" href="images/code-svgrepo-com (2).png"image/x-icon" />
+  <!--  Bootstrap  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <!--  Custom CSS  -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header id="navbar">
+
+    <!-- bootstrapMenu -->
+    <div class="mainMenu">
+      <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" style="background-color: none;">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">My Portfolio</a> -->
+          <img src="images/logo02dark.png" width="120px" />
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#carlosSP" title="Me">About me</a>
+              <a class="nav-link" href="#myCertificates" title="Certificates">Certificates</a>
+              <a class="nav-link" href="#myProjects" title="Projects">Projects</a>
+              <a class="nav-link" href="#myContact" title="Contact me">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+    </div>
+  </header>
+  <div class="VideoBackground">
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="images/abstract_-_47713 (Original).mp4" type="video/mp4">
+    </video>
+  </div>
+    <!-- Intro -->
+  <div class="intro">
+    <h1>Hi, my name is <b>Carlos!</b> <br>
+    I'm a <b>Web Developer.</b></h1>
+    <p>I'm a self-taught developer with a passion for learning and creating innovative solutions to complex problems. </p>
+    <div class="init-buttons"><a class="know-more" href="#carlosSP">know more</a>
+      <a class="know-more" href="#myContact">contact me</a></div>
+    
+
+  </div>
+
+  <!-- About Me -->
+  <div class="about-me">
+    <div class="carlosSP" id="carlosSP">
+      <div class="profileCard">
+        <div class="background">
+          <img src="images/IMG_20240123_195657.png" alt="me" id="me" height="100px">
+        </div>
+        <div class="content">
+          <h2>
+            Carlos Serrano
+          </h2>
+          <p>
+            I am a Computer Programming student at Georgian College with a Bachelors degree in the
+            Ibero-american University in Mexico. Experienced in business management, accountancy,
+            and programming languages such as Python, Java, C/C++, HTML/CSS, JavaScript, PHP, C# and
+            SQL.
+          </p>
+          <p>Aiming to become: </p>
+          <ul class="chips">
+            <li class="chip">Data Analyst</li>
+            <li class="chip">Python Developer</li>
+            <li class="chip">Data Scientist</li>
+          </ul>
+          <div class="action-buttons">
+            <a onclick="downloadResume()" title="resume">Download Resume</a>
+            <a href="#myCertificates" title="See Projects">Look my Certificates</a>
+          </div>
+        </div>
+      </div>
+      <div class="myExperience">
+        <h1>My Experience</h1><br>
+        <div class="exp" id="Rev">
+          <h3>Store Manager & IT Administrator <img class="arrow" src="images/triangle-filled-svgrepo-com.svg" /></h3>
+          <h5>4RevolutionStore</h4>
+            <ul>
+              <li>Developed an e-commerce Website within 3 months creating branding, Logotypes, and photo shooting
+                products increasing sales by 300% in the first 3 months.
+              </li>
+              <li>Built and deployed a mobile web application for Customers Information, Inventory, Sales, Deliveries,
+                Accountancy, Data Analysis, Purchases, Warranties and Sales Per Product to increase productivity and
+                accuracy in service.</li>
+            </ul>
+        </div>
+        <div class="exp" id="alzh-Ins">
+          <h3>Volunteer Web Developer <img class="arrow" src="images/triangle-filled-svgrepo-com.svg" /></h3>
+          <h5>Alzheime's Institute Mexico</h4>
+            <ul>
+              <li>Website development for The <a href="https://institutodelamemoria.org.mx/"> Alzheimer Institute in
+                  Mexico</a> allowing them to receive donations through their website.
+                Provide training employees at Alzheimer’s Institute for the use and administration of the web site and
+                server.</li>
+              <li>Provide training employees at Alzheimer’s Institute for the use and administration of the web site and
+                server.</li>
+            </ul>
+        </div>
+        <div class="exp" id="thincode">
+          <h3>Junior Developer intern <img class="arrow" src="images/triangle-filled-svgrepo-com.svg" /></h3>
+          <h5>Thincode</h4>
+            <ul>
+              <li>Performed updates and the creation of new features using COBOL and Java ensuring all the features are properly built and programming standards are correctly performed.              
+              </li>
+              <li>Performed Unit Tests using TANDEM-GBS.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mySkills" id="mySkills">
+      <abbr title="HTML5"><img src="images/html-5-svgrepo-com.svg" alt="html logo"></abbr>
+      <abbr title="CSS3"><img src="images/css3-svgrepo-com.svg" alt="css logo"></abbr>
+      <abbr title="JavaScript"><img src="images/js-svgrepo-com.svg" alt="js logo"></abbr>
+      <abbr title="PHP"><img src="images/php-svgrepo-com.svg" alt="php logo"></abbr>
+      <abbr title="Python"><img src="images/python-svgrepo-com.svg" alt="python logo"></abbr>
+      <abbr title="Java"><img src="images/java-4-logo-svgrepo-com.svg" alt="java logo"></abbr>
+      <abbr title="MySQL"><img src="images/mysql-logo-svgrepo-com.svg" alt="mysql logo"></abbr>
+      <abbr title="Oracle"><img src="images/oracle-svgrepo-com.svg" alt="oracle logo"></abbr>
+      <abbr title="Django"><img src="images/django-svgrepo-com.svg" alt="django logo"></abbr>
+      <abbr title="Bootstrap"><img src="images/bootstrap-fill-svgrepo-com (2).svg" alt="bootstrap logo"></abbr>
+      <abbr title="Flask"><img src="images/flask-svgrepo-com (1).svg" alt="flask log"></abbr>
+      <abbr title="Git"><img src="images/git-svgrepo-com.svg" alt="git logo"></abbr>
+      <abbr title="MongoDB"><img src="images/mongodb-svgrepo-com.svg" /></abbr>
+      <abbr title="PostgreSQL"><img src="images/postgresql-svgrepo-com.svg" /></abbr>
+      <abbr title="ASP.NET"><img src="images/aspnet-svgrepo-com.svg" /></abbr>
+      <abbr title="C/C++"><img src="images/c-plus-plus-svgrepo-com.svg" /></abbr>
+      <abbr title="C#"><img src="images/c-sharp-svgrepo-com.svg" /></abbr>
+      <abbr title="WordPress"><img src="images/wordpress-svgrepo-com.svg" /></abbr>
+    </div>
+  </div>
+
+  <!-- My Skills-->
+
+  
+
+  <!-- My Certificates -->
+
+  <div class="myCertificates" id="myCertificates">
+    <h1>My Certificates:</h1>
+    <!-- card01 -->
+    <div class="cards">
+
+      <div class="card border-dark mb-3">
+        <div class="card-header">Certificate</div>
+        <div class="card-body">
+          <h5 class="card-title">Data Structures & Algorithms</h5>
+          <p class="card-text">Intensive training on Data Structures and Search algorithms using Python.</p>
+          <img src="images/Python Data Structures.jpg">
+        </div>
+
+      </div>
+
+      <!-- card02 -->
+      <div class="card border-dark mb-3">
+        <div class="card-header">Certificate</div>
+        <div class="card-body">
+          <h5 class="card-title">Scrum Advanced</h5>
+          <p class="card-text">Advanced training on Scrum framework.</p>
+          <img src="images/CertificateOfCompletion_Scrum Advanced.jpg">
+        </div>
+      </div>
+
+      <!-- card03 -->
+
+      <div class="card border-dark mb-3">
+        <div class="card-header">Certificate</div>
+        <div class="card-body">
+          <h5 class="card-title">Advanced Python: working with databases</h5>
+          <p class="card-text">Advanced databases management using Python.</p>
+          <img src="images/Python Woking with Databases.jpg">
+        </div>
+      </div>
+
+      <!-- card04 -->
+      <div class="card border-dark mb-3">
+        <div class="card-header">Certificate</div>
+        <div class="card-body">
+          <h5 class="card-title">Django Essential Training</h5>
+          <p class="card-text">Training on Django Framework. Model View web applications integrating Databases.</p>
+          <img src="images/Django Training.jpg">
+        </div>
+      </div>
+
+      <!-- card05 -->
+      <div class="card border-dark mb-3">
+        <div class="card-header">Certificate</div>
+        <div class="card-body">
+          <h5 class="card-title">Advanced Pyhton: Working With Data</h5>
+          <p class="card-text">Advanced Data manipulation using Python.</p>
+          <img src="images/Python Working with Data.jpg">
+        </div>
+      </div>
+
+      <!-- card06 -->
+      <div class="card border-dark mb-3">
+        <div class="card-header">Certificate</div>
+        <div class="card-body">
+          <h5 class="card-title">Learning Node.js</h5>
+          <p class="card-text">Node.js Training. Use of Databases, APIs, and more.</p>
+          <img src="images/Learning Node Js.jpg">
+        </div>
+      </div>
+
+      <!-- card07 -->
+
+      <!-- <div class="card text-bg-dark mb-3">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Dark card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <img src="images/Python Data Structures.jpg">
+        </div>
+      </div> -->
+
+      <!-- card08 -->
+      <!-- <div class="card text-bg-light mb-3">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title text-dark">Light card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <img src="images/Python Data Structures.jpg">
+        </div>
+      </div> -->
+    </div>
+    <a class="know-more" href="#myProjects">LOOK AT MY PROJECTS</a>
+  </div>
+
+  <!-- My Projects -->
+
+  <div class="myProjects" id="myProjects">
+    <h1>My Projects: </h1>
+    <div class="projects">
+
+      <div class="gradient-cards">
+        <div class="projectCard">
+          <div class="container-card bg-blue-box">
+            <img src="images/PagWeb2.png" alt="4Revolution logo" height="80">
+
+            <p class="card-title">4Revolution Online Store</p>
+            <p class="card-description">Responsive online wristwatches store with cart, and shipping and delivery
+              options depending on the Location inside Canada.</p>
+            <img src="images/html-5-svgrepo-com.svg" alt="html logo" height="20px">
+            <img src="images/css3-svgrepo-com.svg" alt="css logo" height="20px">
+            <img src="images/wordpress-svgrepo-com.svg" alt="wordpress logo" height="20px"><br>
+            <a class="clickable-project" href="https://www.4revolutionstore.com/">View website</a>
+          </div>
+        </div>
+        
+      
+        <div class="projectCard">
+          <div class="container-card bg-green-box">
+            <img src="images/Logo-ins2.jpg" alt="notes logo" id="memory-logo" />
+            <p class="card-title">Alzheimer's Institute Website</p>
+            <p class="card-description">Organization Website comtaining Institute information, contact forms, blogs and
+              donations through PyPal.</p>
+            <img src="images/html-5-svgrepo-com.svg" alt="html logo" height="20px">
+            <img src="images/css3-svgrepo-com.svg" alt="css logo" height="20px">
+            <img src="images/wordpress-svgrepo-com.svg" alt="wordpress logo" height="20px"><br>
+            <a class="clickable-project" href="https://institutodelamemoria.org.mx/">View website</a>
+          </div>
+        </div>
+
+        <div class="projectCard">
+          <div class="container-card bg-white-box">
+            <img src="images/PagWeb.png" width="80" />
+            <p class="card-title">ERP management system AppSheet</p>
+            <p class="card-description">Web app available in mobile devices and browsers.</p>
+            <ul class="card-list">
+              <li>Create, Read, Update and Delete (CRUD) features.</li>
+              <li>Secure password login (password encryption)</li>
+              <li> Data analysis and statistics.</li>
+            </ul>
+            <img src="images/AppSheet_Logo.png" alt="appsheet logo" height="20px"><br>
+            <a class="clickable-project" href="https://www.appsheet.com/start/014bf611-3513-4619-b81c-bd1ecddbcf88#appName=UntitledApp-2023255&group=%5B%5D&page=deck&sort=%5B%7B%22Column%22%3A%22Fecha%22%2C%22Order%22%3A%22Descending%22%7D%5D&table=Venta&view=Ventas">
+              View app</a>
+          </div>
+        </div>
+
+        <div class="projectCard">
+          <div class="container-card bg-green-box">
+            <img src="images/notes-svgrepo-com (4).svg" alt="notes logo" width="80" />
+            <p class="card-title">Notes Web Application Django</p>
+            <p class="card-description">Web application for database manipulation using Django.</p>
+            <ul class="card-list">
+              <li>Create, Read, Update and Delete (CRUD) features.</li>
+              <li>Secure password login (password encryption)</li>
+              <li>Use of cookies for user login.</li>
+            </ul>
+            <img src="images/python-svgrepo-com.svg" alt="Python logo" height="20px">
+            <img src="images/django-svgrepo-com.svg" alt="django logo" height="20px">
+            <img src="images/html-5-svgrepo-com.svg" alt="html logo" height="20px">
+            <img src="images/css3-svgrepo-com.svg" alt="css logo" height="20px">
+            <img src="images/mysql-logo-svgrepo-com.svg" alt="mysql logo" height="20px">
+            <img src="images/bootstrap-fill-svgrepo-com (2).svg" alt="bootstrap logo" height="20px"><br>
+            <a class="clickable-project" href="https://github.com/Crabbier/NotesApp">Get Code</a>
+          </div>
+        </div>
+        
+
+          
+        <div class="projectCard">
+          <div class="container-card bg-white-box">
+
+            <img src="images/database-svgrepo-com.svg" width="80" />
+            <p class="card-title">Data Management System PHP</p>
+            <p class="card-description">PHP biult website connected to a mysql Database.</p>
+            <ul class="card-list">
+              <li>Create, Read, Update and Delete (CRUD) features.</li>
+              <li>Secure password login (password encryption)</li>
+              <li>Use of cookies for user login.</li>
+            </ul>
+            <img src="images/html-5-svgrepo-com.svg" alt="html logo" height="20px">
+            <img src="images/css3-svgrepo-com.svg" alt="css logo" height="20px">
+            <img src="images/mysql-logo-svgrepo-com.svg" alt="mysql logo" height="20px">
+            <img src="images/php-svgrepo-com.svg" alt="php logo" height="20px"><br>
+            <a class="clickable-project" href="https://github.com/Crabbier/SecurityAndFileManagement">Get Code</a>
+          </div>
+        </div>
+          
+
+          
+        <div class="projectCard">
+          <div class="container-card bg-yellow-box">
+            <img src="images/poker-svgrepo-com.svg" alt="html logo" height="80">
+            <p class="card-title">Balck Jack console game JAVA</p>
+            <p class="card-description">Gambling game built in console.</p>
+            <img src="images/java-4-logo-svgrepo-com.svg" alt="java logo" height="25vw"><br>
+            <a class="clickable-project" href="https://github.com/Crabbier/BlackJackGame">Get Code</a>
+          </div>
+        </div>
+        
+        
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Me -->
+
+  <div class="myContact" id="myContact">
+    <div class="myForm">
+      <form action="https://getform.io/f/c402faae-4e0a-4531-ad88-dd200522e850" method="POST">
+        <h1>Contact me: </h1>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email Address</label>
+          <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" autocomplete="email">
+          <div id="emailMessage" class="form-text text-light" style="font-size: 70%;">We'll never share your email with
+            anyone else.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp" autocomplete="name">
+        </div>
+
+        <div class="mb-3">
+          <label for="company" class="form-label">Company (optional)</label>
+          <input type="text" name="company" class="form-control" id="company" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" name="subject" class="form-control" id="subject">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your message</label>
+          <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+
+    <div class="myData">
+      <p>
+        Carlos Serrano
+        <br>
+        location: Toronto, Canada.
+      </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130493.8211732075!2d-79.49532997021706!3d43.720246879378315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20Ontario!5e0!3m2!1ses-419!2sca!4v1707849064162!5m2!1ses-419!2sca" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+
+  </div>
+
+
+
+  <main>
+
+
+  </main>
+  <footer>
+    <p>Copyright© 2023 - Carlos Serrano.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script/script.js" defer></script>
+</body>
+
+
+</html>
