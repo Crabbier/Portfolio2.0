@@ -289,16 +289,14 @@ b {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  justify-content: center;
   list-style-type: none;
   padding: 12px 0px 16px 0px;
 }
 
 .chip {
-  border-radius: 19px;
   padding: 10px;
-  font-size: 12px;
   transition: all 0.3s;
-  font-weight: 500;
   cursor:pointer;
   filter: saturate(.1) brightness(2);
   transition: all .4s ease;
@@ -488,7 +486,7 @@ b {
 
 .exp {
   padding: 20px;
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: linear-gradient(15deg, #13547a71 0%, #80d0c777 100%);
   border-radius: 14px;
   margin-bottom: 40px;  
   color: white;
@@ -496,7 +494,6 @@ b {
   display: grid;
   grid-template-columns: 99% 1%;
   width: 100%;
-  /* background-color: red;   */
 }
 
 .exp h3,
@@ -622,9 +619,7 @@ h5, ul {
 
 /********************** My Certificates section **********************/
  /* 
-
   TODO: convert into carrusel 
-
   */
 .myCertificates {
   display: flex;
@@ -711,7 +706,7 @@ h5, ul {
 }
 
 .projects {
-  width: 80vw !important;
+  width: 90vw !important;
   padding: 0 !important;
   margin-right: auto;
   margin-left: auto;
