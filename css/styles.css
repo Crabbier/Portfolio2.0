@@ -256,7 +256,6 @@ b {
 }
 
 .content {
-  /* background-color: red; */
   font-size: 1 1 350px;
   grid-column-start: 2;
   grid-column-end: 4;
@@ -268,7 +267,6 @@ b {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 1.2%; */
 }
 
 .content>h2 {
@@ -453,6 +451,26 @@ b {
   align-content: space-between;
 }
 
+@media only screen and (max-width: 900px) {
+  .myEducation {
+    max-width: 700px;
+    width: auto;
+    margin: 0 10vw;
+  }
+
+  .edu img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: clamp(9rem, 1vw, 5rem);
+  }
+  .edu h4,h5,h6,p {
+    font-size: clamp(.9rem, 1vw,
+    1rem);
+  }
+
+
+}
+
 /********************** My Experience section **********************/
 
 .myExperience {
@@ -505,6 +523,21 @@ h5, ul {
   transition: all 0.3s out;
   text-align: left;
   font-size: 0%;
+}
+
+@media only screen and (max-width: 900px) {
+  .myExperience {
+    /* max-width: 800px; */
+    width: clamp(260px, 75%, 800px);
+    /* margin: 0 5vw; */
+  }
+
+  .line {
+    border-left-style: solid;
+    border-color: #ffffff;
+    padding-left: clamp(40px, 10%, 150px);
+    margin-left: 13px;
+  }
 }
 
 .arrow {
