@@ -138,7 +138,7 @@ h1 {
   font-size: clamp(3rem, 0.304rem + 3.478vw, 4rem);
 }
 
- b {
+b {
   background: linear-gradient(to right, rgb(0, 0, 94), rgb(0, 161, 161));
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -190,8 +190,8 @@ h1 {
   color: #242424;
   height: auto;
   width: 100vw;
+  min-height: 100vh;
   padding-top: 12vh;
-  /* padding-bottom: 50px; */
   font-size: 16px;
 }
 
@@ -206,16 +206,16 @@ h1 {
 @media only screen and (min-width: 901px) {
   .profileCard {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 33% 33% 34%;
     flex-wrap: wrap;
     flex-direction: row;
     border-radius: 24px;
-    background-color: white;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #ffffff 100%); 
     overflow: hidden;
-    width: clamp(320px, 70vw, 740px);
+    width: clamp(320px, 70vw, 940px);
     transition: all 0.5s ease;
-    height: 600px;
+    height: 60vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
@@ -229,7 +229,6 @@ h1 {
     text-align: left;
     font-size: 0%;
   }
-  
 }
 
 
@@ -257,6 +256,7 @@ h1 {
 }
 
 .content {
+  /* background-color: red; */
   font-size: 1 1 350px;
   grid-column-start: 2;
   grid-column-end: 4;
@@ -264,7 +264,11 @@ h1 {
   grid-row-end: 4;
   padding: 16px;
   text-align: left;
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 1.2%; */
 }
 
 .content>h2 {
@@ -276,9 +280,9 @@ h1 {
 }
 
 .content>p {
-  font-size: clamp(.5rem,
-      1.75vw, 1rem);
-  font-weight: 100%;
+
+  font-size: clamp(1rem, 1.3vw, 1.5rem);
+
   margin: 6px 0;
   color: rgb(26, 26, 26);
 }
@@ -295,30 +299,39 @@ h1 {
   border-radius: 19px;
   padding: 10px;
   font-size: 12px;
-  background-color: #ffffff;
   transition: all 0.3s;
   font-weight: 500;
-  border-color: #bababa;
-  border-style: solid;
-  border-width: 1px;
-  color: #5e5e5e;
   cursor:pointer;
+  filter: saturate(.1) brightness(2);
+  transition: all .4s ease;
+}
+
+.chip:hover {
+  /* filter: drop-shadow(3px 3px 10px rgb(0, 0, 0)); */
+  /* transform:scale(1.1); */
+  color: #242424;
+  filter: saturate(1) brightness(1);
 }
 
 .action-buttons {
   border-top: 1px solid grey;
-  padding-top: 16px;
+  padding: 16px 0px;
   color: #f2f2f2;
   gap: 12px;
   display: flex;
+  width: 100%;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
   margin-top: auto;
   flex-wrap: wrap;
+  /* background-color: black; */
 
 }
 
 .action-buttons a {
   /* background-color: rgb(4, 4, 57); */
-  background: linear-gradient(to bottom, rgb(0, 0, 94), rgb(0, 161, 161));
+  background: linear-gradient(to bottom, rgb(0, 0, 94), rgb(0, 0, 94));
   color: #f2f2f2;
   padding: 12px;
   text-decoration: none;
@@ -345,13 +358,7 @@ h1 {
 }
 
 
-.chip:hover {
-  background-color: rgb(21, 21, 81);
-  color: white;
-  border-width: 1px;
-  border-color: rgb(21, 21, 81);
-  box-shadow: 0 0 10px #6e6e6e;
-}
+
 
 
 /************************************************* 
@@ -364,7 +371,7 @@ h1 {
     display: flex;
     flex-direction: column;
     height: auto;
-    max-width: 40vw;
+    max-width: 60vw;
     min-width: 350px;
     flex-wrap: wrap;
     border-radius: 24px;
@@ -375,13 +382,13 @@ h1 {
   }
 
   .profileCard h2 {
-    font-size: 120%;
+    font-size: 150%;
     font-weight: bold;
     color: rgb(20, 20, 20);
   }
 
   .profileCard p {
-    font-size: 70%;
+    font-size: 80%;
   }
 
   .content {
@@ -389,55 +396,116 @@ h1 {
     flex-direction: column;
   }
 
+  .background img {
+    max-height: 30vh;
+  }
+
   /* .arrow {
     width: 0;
   } */
 }
 
+/********************** My Education section **********************/
+
+.myEducation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  transition: all 0.5s ease;
+  color: rgb(41, 41, 41);
+  width: 700px;
+  padding: 50px 50px;
+  border-radius: 20px; 
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.edu {
+  padding: 20px;
+  background-color: rgba(0, 0, 70, 0.884);
+  border-radius: 14px;
+  margin-bottom: 50px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.edu:hover {
+  transform: scale(1.05);
+}
+
+.edu h4,h5,h6,p {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.edu img {
+  justify-content: end;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.edu h3 {
+  display: flex;
+  align-content: space-between;
+}
+
+/********************** My Experience section **********************/
+
 .myExperience {
   transition: all 0.5s ease;
   color: rgb(41, 41, 41);
-  padding-left: 30px;
-  width: 500px;
-  padding-right: 50px;
-  /* text-align: left; */
+  padding-left: -10vw;
+  width: 800px;
+  /* padding-right: 50px; */
   border-radius: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
   gap: 10px;
+  min-height: 100vh;
 }
 
 .exp {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.096);
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   border-radius: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;  
   color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: grid;
+  grid-template-columns: 99% 1%;
+  width: 100%;
+  /* background-color: red;   */
 }
 
-.myExperience h3,
-h5 {
+.exp h3,
+h5, ul {
   text-align: left;
   transition: all 0.2s;
   width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
-.myExperience h3 {
+.exp h3 {
   font-weight: bold;
+}
+
+.line {
+  border-left-style: solid;
+  border-color: #ffffff;
+  padding-left: 100px;
+  margin-left: 13px;
 }
 
 .myExperience ul {
   transition: all 0.3s out;
   text-align: left;
+  font-size: 0%;
 }
-
-.myExperience ul {
-    transition: all 0.3s ease;
-    text-align: left;
-    /* justify-items: left; */
-    font-size: 0%;
-  }
 
 .arrow {
   width: 10px;
@@ -446,16 +514,12 @@ h5 {
   align-self: right;
 }
 
-.exp h3 {
-  display: flex;
-  align-content: space-between;
-}
-
+#Rev .arrow,
 #alzh-Ins .arrow,
 #thincode .arrow {
   display: flex;
   align-content: space-between;
-  margin-left: 90px;
+  /* margin-left: 90px; */
 }
 
 #Rev:hover ul {
@@ -500,7 +564,7 @@ h5 {
   flex-wrap: wrap;
   width: 100vw;
   gap: 2rem;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   padding-bottom: 60px;
   padding-left: 12vw;
   padding-right: 12vw;
@@ -680,6 +744,7 @@ h5 {
  /* border: 2px solid transparent; */
   background: linear-gradient(71deg, #080509b2, #1a171ca4, #080509ef);
   /* background: linear-gradient(71deg, #080509d5, #1a171cde, #080509); */
+  backdrop-filter: blur(2px);
   background-clip: padding-box;
   border-radius: 25px;
   padding: 40px;
