@@ -234,7 +234,7 @@ b {
     border-radius: 24px;
     background-image: linear-gradient(to top, #e6e9f0 0%, #ffffff 100%); 
     overflow: hidden;
-    width: clamp(320px, 70vw, 940px);
+    width: clamp(320px, 70vw, 700px);
     transition: all 0.5s ease;
     height: 60vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -291,8 +291,8 @@ b {
 }
 
 .content>h2 {
-  font-size: clamp(1.3rem, 2.5vw,
-      1.8rem);
+  font-size: clamp(1.1rem, 2.5vw,
+      1.6rem);
   font-weight: 700;
   margin-bottom: clamp(0.35rem, 2vw,
       0.55rem);
@@ -300,7 +300,7 @@ b {
 
 .content>p {
 
-  font-size: clamp(1rem, 1.3vw, 1.5rem);
+  font-size: clamp(.3rem, 1vw, .9rem);
 
   margin: 6px 0;
   color: rgb(26, 26, 26);
@@ -430,17 +430,18 @@ b {
   justify-content: center ;
   transition: all 0.5s ease;
   color: rgb(41, 41, 41);
-  width: 700px;
-  padding: 50px 50px;
+  width: 500px;
+  padding: 50px ;
   border-radius: 20px; 
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  gap: 16px;
 }
 
 .edu {
   padding: 20px;
   background-color: rgba(0, 0, 70, 0.884);
   border-radius: 14px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: grid;
@@ -457,17 +458,24 @@ b {
 .edu h4,h5,h6,p {
   grid-column-start: 1;
   grid-column-end: 2;
+  font-size: 70%;
 }
 
 .edu img {
   justify-content: end;
   grid-column-start: 2;
   grid-column-end: 3;
+  width: clamp(12rem, 1vw, 5rem);
+}
+
+#ibero img {
+  width: clamp(8rem, 1vw, 5rem);
 }
 
 .edu h3 {
   display: flex;
   align-content: space-between;
+  font-size: 150%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -496,12 +504,12 @@ b {
   transition: all 0.5s ease;
   color: rgb(41, 41, 41);
   padding-left: -10vw;
-  width: 800px;
+  width: 900px;
   /* padding-right: 50px; */
   border-radius: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
-  gap: 10px;
+  gap: 0px;
   min-height: 100vh;
 }
 
@@ -509,7 +517,7 @@ b {
   padding: 20px;
   background-image: linear-gradient(15deg, #13547a71 0%, #80d0c777 100%);
   border-radius: 14px;
-  margin-bottom: 40px;  
+  margin-bottom: 0px;  
   color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: grid;
@@ -524,6 +532,7 @@ h5, ul {
   width: 100%;
   grid-column-start: 1;
   grid-column-end: 2;
+  font-size: 100%;
 }
 
 .exp h3 {
@@ -574,7 +583,7 @@ h5, ul {
 }
 
 #Rev:hover ul {
-  font-size: 100%;
+  font-size: 80%;
 }
 
 #Rev:hover .arrow {
@@ -590,7 +599,7 @@ h5, ul {
 }
 
 #alzh-Ins:hover ul {
-  font-size: 100%;
+  font-size: 80%;
 }
 
 #alzh-Ins:hover .arrow {
@@ -598,7 +607,7 @@ h5, ul {
 }
 
 #thincode:hover ul {
-  font-size: 100%;
+  font-size: 80%;
 }
 
 #thincode:hover .arrow {
@@ -729,13 +738,16 @@ h5, ul {
 .projects {
   width: 90vw !important;
   padding: 0 !important;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  @media screen and (min-width: 992px) and (max-width: 1439px) {
+  @media screen and (min-width: 992px) and (max-width: 1539px) {
     max-width: 1279px !important;
     padding: 0 !important;
-    margin: 0 80px !important;
+    margin: 0 0px !important;
     width: auto !important;
   }
 
@@ -750,8 +762,11 @@ h5, ul {
 .gradient-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
-  padding: 30px;
+  align-items: center;
+  gap: 22px;
+  padding-top: 80px;
+  /* background-color: red; */
+  width: 75%;
   
 
   @media screen and (max-width: 991px) {
@@ -798,7 +813,7 @@ h5, ul {
   border-radius: 25px;
   padding: 40px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.35);
-  height: 610px;
+  height: 510px;
   transition: all 0.5s ease;
 
   img {
@@ -850,21 +865,21 @@ h5, ul {
   letter-spacing: -0.02em;
   line-height: 40px;
   font-style: normal;
-  font-size: 28px;
+  font-size: 22px;
   padding-bottom: 8px;
 }
 
 .card-description {
-  font-weight: 600;
-  line-height: 32px;
+  font-weight: 300;
+  line-height: 20px;
   color: hsla(0, 0%, 100%, 0.5);
-  font-size: 16px;
+  font-size: 12px;
   max-width: 470px;
 }
 
 .card-list {
   font-weight: 300;
-  line-height: 32px;
+  line-height: 20px;
   color: hsla(0, 0%, 100%, 0.5);
   font-size: 16px;
   max-width: 470px;
