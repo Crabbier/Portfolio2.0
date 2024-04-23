@@ -614,6 +614,14 @@ h5, ul {
   transform: rotate(270deg);
 }
 
+#Gaotek:hover ul {
+  font-size: 80%;
+}
+
+#Gaotek:hover .arrow {
+  transform: rotate(270deg);
+}
+
 
 /********************** My Skills section **********************/
 
@@ -956,3 +964,25 @@ h5, ul {
   }
 }
 
+
+/* Scrollbar  */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 161, 161, 0.59);
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 161, 161, 0.89); 
+}
