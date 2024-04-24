@@ -19,7 +19,7 @@ window.onscroll = function() {
 
 function downloadResume() {
   // Assuming 'resume.pdf' is the name of your PDF file
-  const pdfUrl = 'docs/Carlos Serrano - Resume - coop.pdf';
+  const pdfUrl = 'docs/Carlos Serrano - Resume.pdf';
 
   // Creating a link element
   const link = document.createElement('a');
