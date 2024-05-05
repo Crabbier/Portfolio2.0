@@ -823,6 +823,7 @@ h5, ul {
 
   @media screen and (max-width: 991px) {
     border-radius: 15px;
+    height: auto;
   }
 
   .project-photo {
@@ -834,7 +835,7 @@ h5, ul {
     margin-bottom: 32px;
 
     @media screen and (max-width: 991px) {
-      height: 37%;
+      height: 200px;
       border-radius: 15px 15px 0px 0px;
       margin-bottom: 15px;
     }
@@ -927,6 +928,8 @@ h5, ul {
 
   @media screen and (max-width: 991px) {
     bottom: 15px;
+    margin-top: 15px;
+    position: relative;
   }
 }
 
