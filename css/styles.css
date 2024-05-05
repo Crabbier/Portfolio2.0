@@ -648,6 +648,10 @@ h5, ul {
   filter: drop-shadow(3px 3px 10px rgb(0, 0, 0));
   transition: all 0.5s ease;
   cursor: pointer;
+
+  @media screen and (max-width: 991px) {
+    /* max-width: 40px; */
+  }
 }
 
 .mySkills img:hover {
@@ -892,6 +896,9 @@ h5, ul {
   font-style: normal;
   font-size: 22px;
   padding-bottom: 8px;
+  @media screen and (max-width: 991px) {
+    line-height: 28px;
+  }
 }
 
 .card-description {
