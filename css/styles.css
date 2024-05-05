@@ -748,6 +748,7 @@ h5, ul {
   padding: 0 !important;
   margin-right: 20px;
   margin-left: 20px;
+  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -773,7 +774,7 @@ h5, ul {
   align-items: center;
   gap: 22px;
   padding-top: 80px;
-  /* background-color: red; */
+  /* background-color: blue; */
   width: 75%;
   
 
@@ -806,50 +807,50 @@ h5, ul {
    
   .container-card {
     transition: all 0.5s ease;
-    /* background: linear-gradient(71deg, #080509d5, #1a171cde, #080509); */
   }
 }
 
 .container-card {
   position: relative;
-  /* display:  block; */
- /* border: 2px solid transparent; */
   background: linear-gradient(71deg, #080509b2, #1a171ca4, #080509ef);
-  /* background: linear-gradient(71deg, #080509d5, #1a171cde, #080509); */
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   background-clip: padding-box;
-  border-radius: 25px;
-  padding: 40px;
+  border-radius: 5px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.35);
-  height: 510px;
+  height: 580px;
   transition: all 0.5s ease;
 
-  img {
+  @media screen and (max-width: 991px) {
+    border-radius: 15px;
+  }
+
+  .project-photo {
+    width: 100%;
+    height: 40%;
+    border-radius: 5px 5px 0px 0px;
+    object-fit: cover;
+    object-position: top;
     margin-bottom: 32px;
+
+    @media screen and (max-width: 991px) {
+      height: 37%;
+      border-radius: 15px 15px 0px 0px;
+      margin-bottom: 15px;
+    }
+
+  }
+
+  .project-technologies {
+    padding-bottom:18px ;
+
+    img {
+      height: 20px;
+    }
   }
 }
 
-.bg-green-box,
-.bg-white-box,
-.bg-yellow-box,
-.bg-blue-box {
-  position: relative;
-  /*z-index: -1;*/
-}
 
-.bg-green-box::after,
-.bg-white-box::after,
-.bg-yellow-box::after,
-.bg-blue-box::after {
-  position: absolute;
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  content: "";
-  z-index: -1;
-  border-radius: 20px;
-}
 
 /* .bg-green-box::after {
   background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
@@ -867,6 +868,21 @@ h5, ul {
   background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
 } */
 
+.project-desc {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 50%;
+
+  @media screen and (max-width: 991px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
 .card-title {
   font-weight: 600;
   color: white;
@@ -882,20 +898,16 @@ h5, ul {
   line-height: 20px;
   color: hsla(0, 0%, 100%, 0.5);
   font-size: 12px;
-  max-width: 470px;
 }
+
+
 
 .card-list {
   font-weight: 300;
   line-height: 20px;
   color: hsla(0, 0%, 100%, 0.5);
-  font-size: 16px;
+  font-size: 12px;
   max-width: 470px;
-}
-
-#memory-logo {
-  mix-blend-mode: normal;
-  height: 60px;
 }
 
 .clickable-project {
@@ -904,15 +916,18 @@ h5, ul {
   all: unset;
   cursor: pointer;
   text-decoration: none;
-  margin-inline: auto;
-  bottom: 0;
+  
+  bottom: 40px ;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);;
-  width: fit-content;
   border-radius: 10px;
-  position: relative;
+  position: absolute;
   justify-content: left;
   padding: 10px 20px;
   transition: all  0.5s ease-in-out;
+
+  @media screen and (max-width: 991px) {
+    bottom: 15px;
+  }
 }
 
 .clickable-project:hover {
