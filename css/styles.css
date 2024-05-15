@@ -105,10 +105,14 @@ h1 {
   font-size: 2.5rem;
   font-weight: bolder;
   letter-spacing: 5px;
-  background: linear-gradient(to right, rgb(238, 238, 238), rgb(139, 139, 139));
+  background: linear-gradient(to right, rgb(238, 238, 238), rgb(255, 255, 255));
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
+}
+
+.section-title {
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
 
 .VideoBackground {
