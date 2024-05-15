@@ -351,7 +351,6 @@ b {
 }
 
 .action-buttons a {
-  /* background-color: rgb(4, 4, 57); */
   background: linear-gradient(to bottom, rgb(0, 0, 94), rgb(0, 0, 94));
   color: #f2f2f2;
   padding: 12px;
@@ -661,6 +660,7 @@ h5, ul {
     text-align: center;
     color: white;
     padding-top: 20%;
+    text-decoration: none;
   }
 
   p {
@@ -671,10 +671,16 @@ h5, ul {
   &:hover {
     transform: scale(1.2);
   }
-}
 
-.mySkills:hover img {
-  /* transform: scale(1.2); */
+  @media screen and (max-width: 991px) {
+    height: 100px;
+    width: 100px;
+
+    h5 {
+      font-size: 80%;
+      padding-top: 45%;
+    }
+  }
 }
 
 .mySkills img {
@@ -685,9 +691,7 @@ h5, ul {
   position: absolute;
   /* margin-top: 10px; */
 
-  @media screen and (max-width: 991px) {
-    /* max-width: 40px; */
-  }
+  
 }
 
 .mySkills img:hover {
