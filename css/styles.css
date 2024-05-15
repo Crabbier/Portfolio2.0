@@ -516,7 +516,7 @@ b {
 .exp {
   padding: 20px;
   background-image: linear-gradient(15deg, #13547a71 0%, #80d0c777 100%);
-  border-radius: 14px;
+  border-radius: 6px;
   margin-bottom: 0px;  
   color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -639,15 +639,42 @@ h5, ul {
   transition: all 0.5s ease;
 }
 
+.skill-card {
+  height: 100px;
+  width: 200px;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  gap: 15px;
+  background-color: #24242481;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+  h5 {
+    text-align: center;
+    color: white;
+    padding-top: 20%;
+  }
+
+  p {
+    color: white;
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
 .mySkills:hover img {
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 
 .mySkills img {
-  max-width: 60px;
+  max-width: 40px;
   filter: drop-shadow(3px 3px 10px rgb(0, 0, 0));
   transition: all 0.5s ease;
   cursor: pointer;
+  position: absolute;
+  /* margin-top: 10px; */
 
   @media screen and (max-width: 991px) {
     /* max-width: 40px; */
