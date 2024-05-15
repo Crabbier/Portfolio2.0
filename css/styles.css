@@ -578,6 +578,11 @@ h5, ul {
   align-self: right;
 }
 
+.exp a {
+  text-decoration: none;
+  color: #81d1ff;
+}
+
 #Rev .arrow,
 #alzh-Ins .arrow,
 #thincode .arrow {
