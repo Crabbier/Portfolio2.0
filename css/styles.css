@@ -105,13 +105,14 @@ h1 {
   font-size: 2.5rem;
   font-weight: bolder;
   letter-spacing: 5px;
-  background: linear-gradient(to right, rgb(238, 238, 238), rgb(255, 255, 255));
+  /* background: linear-gradient(to right, rgb(238, 238, 238), rgb(255, 255, 255));
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   text-transform: uppercase;
 }
 
 .section-title {
+  color: white;
   text-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
 
@@ -160,6 +161,8 @@ h1 {
   padding-right: 10vw;
   font-weight: bolder;
   background-image: linear-gradient(to left, #d8d8d8 0%, black 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: clamp(3rem, 0.304rem + 3.478vw, 4rem);
 }
 
@@ -203,7 +206,7 @@ b {
 }
 
 .about-me h1 {
-  color: white;
+  /* color: white; */
 }
 
 .carlosSP {
@@ -647,14 +650,27 @@ h5, ul {
   transition: all 0.5s ease;
 }
 
+.my-skills-title {
+  position: absolute;
+  font-size: 350px;
+  color: rgba(255, 255, 255, 0.1);
+  text-shadow: none;
+  text-align: center;
+  /* background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  z-index: 0;
+  /* background: linear-gradient(to right, rgba(238, 238, 238, 0.329), rgb(255, 255, 255)); */
+}
+
 .skill-card {
   height: 100px;
   width: 200px;
   border-radius: 12px;
   transition: all 0.5s ease;
-  gap: 15px;
-  background-color: #24242481;
+  gap: 10px;
+  background-color: #003f5880;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1;
   
   h5 {
     text-align: center;
@@ -689,9 +705,7 @@ h5, ul {
   transition: all 0.5s ease;
   cursor: pointer;
   position: absolute;
-  /* margin-top: 10px; */
-
-  
+  padding: 10px 0px 0px 10px;
 }
 
 .mySkills img:hover {
