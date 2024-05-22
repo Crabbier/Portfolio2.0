@@ -653,7 +653,7 @@ h5, ul {
 .my-skills-title {
   position: absolute;
   font-size: 350px;
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.2);
   text-shadow: none;
   text-align: center;
   /* background-clip: text; */
@@ -1065,3 +1065,6 @@ h5, ul {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 161, 161, 0.89); 
 }
+
+
+/* Testing section */
