@@ -28,7 +28,7 @@ body {
 }
 
 .nav-link {
-  transition:all  .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-link::after {
@@ -39,7 +39,7 @@ body {
   background-color: #0095c2;
   /* transform-origin: right; */
   transform: scale(0);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .nav-link:hover::after {
@@ -63,7 +63,7 @@ header {
   grid-template-rows: auto auto auto;
   text-align: center;
   transition: top 0.3s;
-  background: linear-gradient(to right, rgb(255, 255, 255) 70%,#0c6980f8);
+  background: linear-gradient(to right, rgb(255, 255, 255) 70%, #0c6980f8);
   backdrop-filter: blur(8px);
   box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
@@ -72,9 +72,7 @@ header {
   padding-right: 30px;
 }
 
-
 @media only screen and (min-width: 901px) {
-
   .container-fluid div {
     justify-content: center;
   }
@@ -94,7 +92,7 @@ footer {
   color: #fff;
   padding-top: 10px;
   text-align: center;
-  background-color: rgb(0, 0, 0, .75);
+  background-color: rgb(0, 0, 0, 0.75);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   width: 100%;
@@ -142,14 +140,14 @@ h1 {
 .intro {
   top: 0;
   display: flex;
-  background: linear-gradient(to right, rgb(255, 255, 255) 50%,#0c6980dc);
+  background: linear-gradient(to right, rgb(255, 255, 255) 50%, #0c6980dc);
   /* backdrop-filter: blur(10px); */
   color: rgb(48, 48, 48);
   font-weight: bold;
   min-height: 100vh;
   width: 100%;
   flex-direction: column;
-  padding-left: 10VW;
+  padding-left: 10vw;
   padding-right: 10vw;
   justify-content: center;
 }
@@ -166,6 +164,12 @@ h1 {
   font-size: clamp(3rem, 0.304rem + 3.478vw, 4rem);
 }
 
+.intro p {
+  font-size: clamp(1rem, 0.304rem + 1.279vw, 1.3rem);
+  padding-right: 10vw;
+  font-weight: 100;
+}
+
 b {
   background: linear-gradient(to right, rgb(0, 0, 94), rgb(0, 161, 161));
   background-clip: text;
@@ -176,13 +180,13 @@ b {
   padding: 10px 20px;
   font-weight: bold;
   border: hidden black;
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   width: fit-content;
   border-radius: 10px;
   text-decoration: none;
   color: rgb(37, 37, 37);
   cursor: pointer;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .know-more:hover {
@@ -190,7 +194,7 @@ b {
   border: hidden;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 /********************** My Profile card section **********************/
@@ -198,7 +202,11 @@ b {
 .about-me {
   min-height: 100vh;
   /* padding-top: 10vh; */
-  background: linear-gradient(180deg, rgba(0, 161, 161, 0.89) 10%,#0c6980f8 50%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 161, 161, 0.89) 10%,
+    #0c6980f8 50%
+  );
   /* background: radial-gradient(at 0% 0% , rgb(255, 255, 255) 20%, rgba(9, 13, 36, 0.801)70%); */
   /* background: linear-gradient(to right, rgb(255, 255, 255) 50%,rgba(0, 0, 97, 0.575)); */
   /* background-color: rgba(9, 13, 36, 0.773); */
@@ -239,7 +247,7 @@ b {
     flex-wrap: wrap;
     flex-direction: row;
     border-radius: 24px;
-    background-image: linear-gradient(to top, #e6e9f0 0%, #ffffff 100%); 
+    background-image: linear-gradient(to top, #e6e9f0 0%, #ffffff 100%);
     overflow: hidden;
     width: clamp(320px, 70vw, 700px);
     transition: all 0.5s ease;
@@ -251,15 +259,7 @@ b {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transform: scale(1.05);
   }
-
-  .myExperience ul {
-    transition: all 0.3s ease;
-    text-align: left;
-    font-size: 0%;
-  }
 }
-
-
 
 .profileCard img {
   transition: all 0.5s ease;
@@ -297,17 +297,14 @@ b {
   align-items: center;
 }
 
-.content>h2 {
-  font-size: clamp(1.1rem, 2.5vw,
-      1.6rem);
+.content > h2 {
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
   font-weight: 700;
-  margin-bottom: clamp(0.35rem, 2vw,
-      0.55rem);
+  margin-bottom: clamp(0.35rem, 2vw, 0.55rem);
 }
 
-.content>p {
-
-  font-size: clamp(.3rem, 1vw, .9rem);
+.content > p {
+  font-size: clamp(0.3rem, 1vw, 0.9rem);
 
   margin: 6px 0;
   color: rgb(26, 26, 26);
@@ -325,9 +322,9 @@ b {
 .chip {
   padding: 10px;
   transition: all 0.3s;
-  cursor:pointer;
-  filter: saturate(.1) brightness(2);
-  transition: all .4s ease;
+  cursor: pointer;
+  filter: saturate(0.1) brightness(2);
+  transition: all 0.4s ease;
 }
 
 .chip:hover {
@@ -350,7 +347,6 @@ b {
   margin-top: auto;
   flex-wrap: wrap;
   /* background-color: black; */
-
 }
 
 .action-buttons a {
@@ -380,16 +376,11 @@ b {
   /* transform: scale(1.02); */
 }
 
-
-
-
-
 /************************************************* 
           RESPONSIVE PROFILE CARD (MOBILE) 
 ****************************************************/
 
 @media only screen and (max-width: 900px) {
-
   .profileCard {
     display: flex;
     flex-direction: column;
@@ -433,12 +424,12 @@ b {
 .myEducation {
   display: flex;
   flex-direction: column;
-  justify-content: center ;
+  justify-content: center;
   transition: all 0.5s ease;
   color: rgb(41, 41, 41);
   width: 500px;
-  padding: 50px ;
-  border-radius: 20px; 
+  padding: 50px;
+  border-radius: 20px;
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   gap: 16px;
 }
@@ -461,7 +452,10 @@ b {
   transform: scale(1.05);
 }
 
-.edu h4,h5,h6,p {
+.edu h4,
+h5,
+h6,
+p {
   grid-column-start: 1;
   grid-column-end: 2;
   font-size: 70%;
@@ -496,12 +490,12 @@ b {
     grid-column-end: 2;
     width: clamp(9rem, 1vw, 5rem);
   }
-  .edu h4,h5,h6,p {
-    font-size: clamp(.9rem, 1vw,
-    1rem);
+  .edu h4,
+  h5,
+  h6,
+  p {
+    font-size: clamp(0.9rem, 1vw, 1rem);
   }
-
-
 }
 
 /********************** My Experience section **********************/
@@ -523,7 +517,7 @@ b {
   padding: 20px;
   background-image: linear-gradient(15deg, #13547a71 0%, #80d0c777 100%);
   border-radius: 6px;
-  margin-bottom: 0px;  
+  margin-bottom: 0px;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: grid;
@@ -532,7 +526,8 @@ b {
 }
 
 .exp h3,
-h5, ul {
+h5,
+ul {
   text-align: left;
   transition: all 0.2s;
   width: 100%;
@@ -555,7 +550,7 @@ h5, ul {
 .myExperience ul {
   transition: all 0.3s out;
   text-align: left;
-  font-size: 0%;
+  font-size: 80%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -593,9 +588,9 @@ h5, ul {
   /* margin-left: 90px; */
 }
 
-#Rev:hover ul {
+/* #Rev:hover ul {
   font-size: 80%;
-}
+} */
 
 #Rev:hover .arrow {
   transform: rotate(270deg);
@@ -605,13 +600,13 @@ h5, ul {
   width: 110%;
 } */
 
-#Rev:hover~#alz-Ins img {
+/* #Rev:hover~#alz-Ins img {
   height: 0%;
-}
+} */
 
-#alzh-Ins:hover ul {
+/* #alzh-Ins:hover ul {
   font-size: 80%;
-}
+} */
 
 #alzh-Ins:hover .arrow {
   transform: rotate(270deg);
@@ -633,7 +628,6 @@ h5, ul {
   transform: rotate(270deg);
 }
 
-
 /********************** My Skills section **********************/
 
 .mySkills {
@@ -650,16 +644,17 @@ h5, ul {
   transition: all 0.5s ease;
 }
 
-.my-skills-title {
+.my-back-title {
   position: absolute;
   font-size: 350px;
   color: rgba(255, 255, 255, 0.2);
   text-shadow: none;
   text-align: center;
-  /* background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
   z-index: 0;
-  /* background: linear-gradient(to right, rgba(238, 238, 238, 0.329), rgb(255, 255, 255)); */
+
+  @media only screen and (max-width: 1170px) {
+    font-size: 28vw;
+  }
 }
 
 .skill-card {
@@ -671,7 +666,7 @@ h5, ul {
   background-color: #003f5880;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 1;
-  
+
   h5 {
     text-align: center;
     color: white;
@@ -714,7 +709,7 @@ h5, ul {
 }
 
 /********************** My Certificates section **********************/
- /* 
+/* 
   TODO: convert into carrusel 
   */
 .myCertificates {
@@ -725,7 +720,11 @@ h5, ul {
   width: 100vw;
   padding-top: 80px;
   padding-bottom: 30px;
-  background: linear-gradient(180deg, #0c6980f8 10%,rgba(0, 161, 161, 0.89) 50%);
+  background: linear-gradient(
+    180deg,
+    #0c6980f8 10%,
+    rgba(0, 161, 161, 0.89) 50%
+  );
 }
 
 .cards {
@@ -745,7 +744,6 @@ h5, ul {
   height: 100%;
 }
 
-
 .card {
   box-shadow: 3px 3px 10px rgb(0, 0, 0);
   transition: all 0.7s ease;
@@ -756,7 +754,7 @@ h5, ul {
   backdrop-filter: blur(15px);
 }
 
-.card .card-title{
+.card .card-title {
   font-size: 160%;
   line-height: 100%;
   font-weight: 80%;
@@ -769,7 +767,7 @@ h5, ul {
 }
 
 @media only screen and (min-width: 901px) {
-    .card:hover {
+  .card:hover {
     font-size: 0;
     width: 25rem;
   }
@@ -797,7 +795,11 @@ h5, ul {
   padding-top: 10vh;
   padding-bottom: 10vh;
   /* clip-path: polygon(0 0,100% 0,100% 80%,0 100%); */
-  background: linear-gradient(180deg, rgba(0, 161, 161, 0.89) 30%,#0c6980f8 50%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 161, 161, 0.89) 30%,
+    #0c6980f8 50%
+  );
   /* backdrop-filter: blur(8px); */
 }
 
@@ -830,11 +832,11 @@ h5, ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 22px;
+  justify-content: center;
+  gap: 30px;
   padding-top: 80px;
   /* background-color: blue; */
-  width: 75%;
-  
+  width: 100%;
 
   @media screen and (max-width: 991px) {
     grid-template-columns: 1fr;
@@ -855,14 +857,14 @@ h5, ul {
   max-width: 400px;
   border: 0;
   width: 100%;
-  margin-inline: auto;
+  margin-top: 40px;
+  /* margin-inline: auto; */
   transition: all 0.5s ease;
-  
 }
 
 .projectCard:hover {
-  transform:translatey(-15px);
-   
+  transform: translatey(-15px);
+
   .container-card {
     transition: all 0.5s ease;
   }
@@ -897,19 +899,16 @@ h5, ul {
       border-radius: 15px 15px 0px 0px;
       margin-bottom: 15px;
     }
-
   }
 
   .project-technologies {
-    padding-bottom:18px ;
+    padding-bottom: 18px;
 
     img {
       height: 20px;
     }
   }
 }
-
-
 
 /* .bg-green-box::after {
   background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
@@ -939,7 +938,6 @@ h5, ul {
     padding-left: 15px;
     padding-right: 15px;
   }
-
 }
 
 .card-title {
@@ -962,8 +960,6 @@ h5, ul {
   font-size: 12px;
 }
 
-
-
 .card-list {
   font-weight: 300;
   line-height: 20px;
@@ -978,14 +974,14 @@ h5, ul {
   all: unset;
   cursor: pointer;
   text-decoration: none;
-  
-  bottom: 40px ;
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);;
+
+  bottom: 40px;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   border-radius: 10px;
   position: absolute;
   justify-content: left;
   padding: 10px 20px;
-  transition: all  0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   @media screen and (max-width: 991px) {
     bottom: 15px;
@@ -999,11 +995,11 @@ h5, ul {
   border: hidden;
   color: white !important;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /************************ My Contact *************************/
@@ -1015,7 +1011,11 @@ h5, ul {
   justify-content: center;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background: linear-gradient(180deg, #0c6980f8 10%,rgba(0, 161, 161, 0.89) 50%);
+  background: linear-gradient(
+    180deg,
+    #0c6980f8 10%,
+    rgba(0, 161, 161, 0.89) 50%
+  );
   /* backdrop-filter: blur(8px); */
   width: 100%;
   min-height: 100vh;
@@ -1024,9 +1024,8 @@ h5, ul {
 
 .myForm {
   max-width: 80%;
-  width: clamp(.7vw, 350px, 500px);
+  width: clamp(0.7vw, 350px, 500px);
 }
-
 
 .myData iframe {
   border-radius: 10px;
@@ -1034,7 +1033,6 @@ h5, ul {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.205);
   border-radius: 10px;
-  
 }
 
 @media only screen and (max-width: 901px) {
@@ -1042,7 +1040,6 @@ h5, ul {
     width: 70vw;
   }
 }
-
 
 /* Scrollbar  */
 /* width */
@@ -1052,9 +1049,9 @@ h5, ul {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent; 
+  background: transparent;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(0, 161, 161, 0.59);
@@ -1063,8 +1060,7 @@ h5, ul {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 161, 161, 0.89); 
+  background: rgba(0, 161, 161, 0.89);
 }
-
 
 /* Testing section */

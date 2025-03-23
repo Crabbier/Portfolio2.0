@@ -1,114 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlos | Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="images/browser-coding2-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <!--  Bootstrap  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <!--  Custom CSS  -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carlos | Portfolio</title>
-  <link rel="shortcut icon" href="images/browser-coding2-svgrepo-com.svg"image/x-icon" />
-  <!--  Bootstrap  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-  <!--  Custom CSS  -->
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <header id="navbar">
+      <!-- bootstrapMenu -->
+      <div class="mainMenu">
+        <nav
+          class="navbar sticky-top navbar-expand-lg bg-body-tertiary"
+          style="background-color: none"
+        >
+          <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">My Portfolio</a> -->
+            <img src="images/Logo04dark.png" width="120px" />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#carlosSP"
+                  title="Me"
+                  >About me</a
+                >
+                <a class="nav-link" href="#myExperience" title="Certificates"
+                  >Experience</a
+                >
+                <a class="nav-link" href="#myCertificates" title="Certificates"
+                  >Certificates</a
+                >
+                <a class="nav-link" href="#myProjects" title="Projects"
+                  >Projects</a
+                >
+                <a class="nav-link" href="#myContact" title="Contact me"
+                  >Contact Me</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="VideoBackground">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="images/abstract_-_47713 (Original).mp4" type="video/mp4" />
+      </video>
+    </div>
+    <!-- Intro -->
+    <div class="intro">
+      <h1>
+        Hi, my name is <b>Carlos!</b> <br />
+        I'm a <b>Software Developer.</b>
+      </h1>
+      <p>
+        I'm a Software Developer with a passion for learning and creating
+        innovative solutions to complex problems.
+      </p>
+      <div class="init-buttons">
+        <a class="know-more" href="#carlosSP">know more</a>
+        <a class="know-more" href="#myContact">contact me</a>
+      </div>
+    </div>
 
-<body>
-  <header id="navbar">
-
-    <!-- bootstrapMenu -->
-    <div class="mainMenu">
-      <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" style="background-color: none;">
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">My Portfolio</a> -->
-          <img src="images/Logo04dark.png" width="120px" />
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#carlosSP" title="Me">About me</a>
-              <a class="nav-link" href="#myExperience" title="Certificates">Experience</a>
-              <a class="nav-link" href="#myCertificates" title="Certificates">Certificates</a>
-              <a class="nav-link" href="#myProjects" title="Projects">Projects</a>
-              <a class="nav-link" href="#myContact" title="Contact me">Contact Me</a>
+    <!-- About Me -->
+    <div class="about-me">
+      <div class="carlosSP" id="carlosSP">
+        <div class="profileCard">
+          <div class="background">
+            <img
+              src="images/Profile Picture.jpg"
+              alt="me"
+              id="me"
+              height="100px"
+            />
+          </div>
+          <div class="content">
+            <h2>Carlos Serrano</h2>
+            <p>
+              I am an experienced Web and Applications Developer . Experienced
+              in Design, Development and Implementation of complex Web
+              Applications and Database deisgn and management.
+            </p>
+            <p>Social Media:</p>
+            <ul class="chips">
+              <a
+                class="chip"
+                href="https://github.com/Crabbier"
+                target="_blank"
+                rel="noopener"
+                ><img src="images/github-142-svgrepo-com.svg" height="30px"
+              /></a>
+              <a
+                class="chip"
+                href="https://www.linkedin.com/in/carlos-fco-serrano-prado/"
+                target="_blank"
+                rel="noopener"
+                ><img src="images/linkedin-161-svgrepo-com.svg" height="30px"
+              /></a>
+              <a class="chip" href="https://wa.me/+14374994968"
+                ><img
+                  src="images/whatsapp-128-svgrepo-com.svg"
+                  height="30px"
+                  target="_blank"
+                  rel="noopener"
+              /></a>
+            </ul>
+            <div class="action-buttons">
+              <a onclick="downloadResume()" title="resume">Download Resume</a>
+              <a href="#myExperience" title="See Experience">My Experience</a>
             </div>
           </div>
         </div>
-      </nav>
+        <div class="myEducation">
+          <!-- <h1>My Education</h1><br> -->
+          <div class="edu" id="ibero">
+            <h3>Business & Systems Engineering</h3>
+            <h5>Bacherlos Degree</h5>
+            <h6>Ibero-American University</h6>
+            <p>August 2017 - May 2022</p>
+            <img
+              src="images/UNIVERSIDAD_IBEROAMERICANA_PUEBLA.svg"
+              width="150px"
+            />
+          </div>
+          <div class="edu" id="georgian">
+            <h3>Computer Prgramming</h3>
+            <h5>College Diploma</h5>
+            <h6 style="font-weight: normal">Georgian College</h6>
+            <p>May 2023 - December 2024</p>
 
-
-    </div>
-  </header>
-  <div class="VideoBackground">
-    <video autoplay loop muted plays-inline class="back-video">
-      <source src="images/abstract_-_47713 (Original).mp4" type="video/mp4">
-    </video>
-  </div>
-    <!-- Intro -->
-  <div class="intro">
-    <h1>Hi, my name is <b>Carlos!</b> <br>
-    I'm a <b>Software Developer.</b></h1>
-    <p>I'm a creative developer with a passion for learning and creating innovative solutions to complex problems.</p>
-    <div class="init-buttons"><a class="know-more" href="#carlosSP">know more</a>
-      <a class="know-more" href="#myContact">contact me</a></div>
-    
-
-  </div>
-
-  <!-- About Me -->
-  <div class="about-me">
-    <div class="carlosSP" id="carlosSP">
-      <div class="profileCard">
-        <div class="background">
-          <img src="images/Profile Picture.jpg" alt="me" id="me" height="100px">
-        </div>
-        <div class="content">
-          <h2>
-            Carlos Serrano
-          </h2>
-          <p>
-            I am a Computer Programming student at Georgian College with a Bachelors degree in the
-            Ibero-american University in Mexico. Experienced in business management, accountancy,
-            and programming languages such as Python, Java, C/C++, HTML/CSS, JavaScript, PHP, C# and
-            SQL.
-          </p>
-          <p>Social Media: </p>
-          <ul class="chips">
-            <a class="chip" href="https://github.com/Crabbier" target="_blank" rel="noopener"><img src="images/github-142-svgrepo-com.svg" height="30px"></a>
-            <a class="chip" href="https://www.linkedin.com/in/carlos-fco-serrano-prado/" target="_blank" rel="noopener"><img src="images/linkedin-161-svgrepo-com.svg" height="30px"></a>
-            <a class="chip" href="https://wa.me/+14374994968"><img src="images/whatsapp-128-svgrepo-com.svg" height="30px" target="_blank" rel="noopener"></a>
-          </ul>
-          <div class="action-buttons">
-            <a onclick="downloadResume()" title="resume">Download Resume</a>
-            <a href="#myExperience" title="See Experience">My Experience</a>
+            <img src="images/GILAC_emailsize.png" width="280px" />
           </div>
         </div>
-      </div>
-      <div class="myEducation">
-        <!-- <h1>My Education</h1><br> -->
-        <div class="edu" id="ibero">
-          <h3>Business & Systems Engineering </h3> 
-          <h5>Bacherlos Degree</h5>
-          <h6>Ibero-American University</h6>
-          <p>August 2017 - May 2022</p>
-          <p>GPA: 94.9/100</p>
-          <img src="images/UNIVERSIDAD_IBEROAMERICANA_PUEBLA.svg" width="150px">
-        </div>
-        <div class="edu" id="georgian">
-          <h3>Computer Prgramming</h3>
-          <h5>College Diploma</h5>
-          <h6 style="font-weight: normal;">Georgian College</h6>
-          <p>May 2023 - December 2024(expected)</p>
-          
-          <img src="images/GILAC_emailsize.png" width="280px">
-        </div>
-      </div>
-      
-      <div class="mySkills" id="mySkills">
-        <h1 class="section-title my-skills-title">My Skills</h1>
-        <div class="skill-card"><img src="images/html-5-svgrepo-com.svg" alt="html logo"><h5>HTML</h5></div> 
+
+        <div class="mySkills" id="mySkills">
+          <h1 class="section-title my-back-title">My Skills</h1>
+          <!-- <div class="skill-card"><img src="images/html-5-svgrepo-com.svg" alt="html logo"><h5>HTML</h5></div> 
         <div class="skill-card"><img src="images/css3-svgrepo-com.svg" alt="css logo"><h5>CSS</h5></div>
         <div class="skill-card"><img src="images/js-svgrepo-com.svg" alt="js logo"><h5>JavaScript</h5></div>
         <div class="skill-card"><img src="images/php-svgrepo-com.svg" alt="php logo"><h5>PHP</h5></div>
@@ -129,165 +186,296 @@
         <div class="skill-card"><img src="images/wordpress-svgrepo-com.svg" /><h5>WordPress</h5></div>
         <div class="skill-card"><img src="images/dart-svgrepo-com.svg" alt="Dart logo"><h5>Dart</h5></div>
         <div class="skill-card"><img src="images/flutter-svgrepo-com.svg" alt="Flutter logo"><h5>Flutter</h5></div>
-        <div class="skill-card"><img src="images/icons8-azure.svg" alt="Azure logo"><h5>Microsoft Azure</h5></div>
-      </div>
-      
-      <div class="myExperience" id="myExperience">
-        <h1 class="section-title">My Experience</h1><br>
-        <svg height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div class="line">
-          <div class="exp" id="Rev">
-            <!-- <div class="exp-content"> -->
-              <h3>IT Manager </h3><img class="arrow" src="images/triangle-filled-svgrepo-com.svg" />
-              <h5>4RevolutionStore</h5>
+        <div class="skill-card"><img src="images/icons8-azure.svg" alt="Azure logo"><h5>Microsoft Azure</h5></div> -->
+        </div>
+        <div class="myExperience" id="myExperience">
+          <h1 class="section-title">My Experience</h1>
+          <br />
+          <svg
+            height="30px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+              stroke="white"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="line">
+            <div class="exp" id="Integrated Productions">
+              <!-- <div class="exp-content"> -->
+              <h3>Web and App Developer</h3>
+              <img class="arrow" src="images/triangle-filled-svgrepo-com.svg" />
+              <h5>Integrated Productions Inc.</h5>
+              <p>May 2024 - Present</p>
+              <ul>
+                <li>
+                  Developed in Flutter using Dart, PostgreSQL and implemented
+                  using Amazon AWS.
+                </li>
+                <li>
+                  Worked on the development of the website using HTML, CSS,
+                  JavaScript, and PHP.
+                </li>
+                <li>
+                  Implemented AJAX Search engine for products of an online
+                  store.
+                </li>
+                <li>
+                  Implemented Google Analytics, and Google tags to position the
+                  website on the search console.
+                </li>
+              </ul>
+              <!-- </div> -->
+            </div>
+          </div>
+          <svg
+            height="30px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+              stroke="white"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="line">
+            <div class="exp" id="Gaotek">
+              <!-- <div class="exp-content"> -->
+              <h3>Web Developer</h3>
+              <img class="arrow" src="images/triangle-filled-svgrepo-com.svg" />
+              <h5>GAOTek Inc.</h5>
+              <p>February 2024 - May 2024</p>
+              <ul>
+                <li>
+                  Worked on programming and designing components and features
+                  for the website.
+                </li>
+                <li>
+                  Worked on the development of the website using HTML, CSS,
+                  JavaScript, and PHP.
+                </li>
+                <li>
+                  Implemented AJAX Search engine for products of an online
+                  store.
+                </li>
+                <li>
+                  Implemented Google Analytics, and Google tags to position the
+                  website on the search console.
+                </li>
+              </ul>
+              <!-- </div> -->
+            </div>
+          </div>
+          <svg
+            height="30px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+              stroke="white"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="line">
+            <div class="exp" id="Rev">
+              <!-- <div class="exp-content"> -->
+              <h3>IT Manager</h3>
+              <img class="arrow" src="images/triangle-filled-svgrepo-com.svg" />
+              <h5>4Revolution Store</h5>
               <p>May 2019 - February 2023</p>
               <ul>
-                <li>Developed an e-commerce Website creating branding, Logotypes, and photo shooting
-                  products increasing sales by 300% in the first 3 months.
+                <li>
+                  Developed an e-commerce Website creating branding, Logotypes,
+                  and photo shooting products increasing sales by 300% in the
+                  first 3 months.
                 </li>
-                <li>Maintain update and redesign the website while advertising using Google Ads, Google Analytics and Meta business Ads.</li>
-                <li>Built and deployed a mobile web application for Customers Information, Inventory, Sales, Deliveries, Accountancy, Data Analysis, 
-                  Purchases, Warranties and Sales Per Product to increase productivity and accuracy in service increasing productivity by 200%.</li>
+                <li>
+                  Maintain update and redesign the website while advertising
+                  using Google Ads, Google Analytics and Meta business Ads.
+                </li>
+                <li>
+                  Built and deployed a mobile web application for Customers
+                  Information, Inventory, Sales, Deliveries, Accountancy, Data
+                  Analysis, Purchases, Warranties and Sales Per Product to
+                  increase productivity and accuracy in service increasing
+                  productivity by 200%.
+                </li>
               </ul>
+            </div>
           </div>
-        </div>
-        <!-- </div> -->
-        <svg height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div class="line">
-          <div class="exp" id="alzh-Ins">
-            <!-- <div class="exp-content"> -->
-            <h3>Web Developer</h3><img class="arrow" src="images/triangle-filled-svgrepo-com.svg" />
-            <h5>Alzheime's Institute Mexico</h5>
-            <p>june 2021 - January 2022</p>
+          <!-- </div> -->
+          <svg
+            height="30px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+              stroke="white"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="line">
+            <div class="exp" id="alzh-Ins">
+              <!-- <div class="exp-content"> -->
+              <h3>Web Developer</h3>
+              <img class="arrow" src="images/triangle-filled-svgrepo-com.svg" />
+              <h5>Alzheime's Institute Mexico</h5>
+              <p>june 2021 - January 2022</p>
               <ul>
-                <li>Website development for The <a href="https://institutodelamemoria.org.mx/" target="_blank" rel="noopener"> Alzheimer Institute in
-                    Mexico</a> allowing them to receive donations through their website.
-                  Provide training employees at Alzheimer’s Institute for the use and administration of the web site and
-                  server.</li>
-                <li>Provide training and documentation for employees at Alzheimer’s Institute for the use and administration of the web site and server.</li>
+                <li>
+                  Website development for The
+                  <a
+                    href="https://institutodelamemoria.org.mx/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Alzheimer Institute in Mexico</a
+                  >
+                  allowing them to receive donations through their website.
+                  Provide training employees at Alzheimer’s Institute for the
+                  use and administration of the web site and server.
+                </li>
+                <li>
+                  Provide training and documentation for employees at
+                  Alzheimer’s Institute for the use and administration of the
+                  web site and server.
+                </li>
               </ul>
-            <!-- </div> -->
+              <!-- </div> -->
+            </div>
           </div>
-        </div>
-        <svg height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div class="line">
-          <div class="exp" id="thincode">
-            <!-- <div class="exp-content"> -->
-            <h3>Junior Developer intern</h3><img class="arrow" src="images/triangle-filled-svgrepo-com.svg" />
-            <h5>Thincode</h5>
-            <p>August 2021 - January 2022</p>
+          <svg
+            height="30px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+              stroke="white"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="line">
+            <div class="exp" id="thincode">
+              <!-- <div class="exp-content"> -->
+              <h3>Junior Developer intern</h3>
+              <img class="arrow" src="images/triangle-filled-svgrepo-com.svg" />
+              <h5>Thincode</h5>
+              <p>August 2021 - January 2022</p>
               <ul>
-                <li>Performed updates and the creation of new features using COBOL and Java ensuring all the features are properly built and programming standards are correctly performed.              
+                <li>
+                  Performed updates and the creation of new features using COBOL
+                  and Java ensuring all the features are properly built and
+                  programming standards are correctly performed.
                 </li>
                 <li>Performed Unit Tests using TANDEM-GBS.</li>
               </ul>
-            <!-- </div> -->
-          </div>
-        </div>
-        <svg height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div class="line">
-          <div class="exp" id="Gaotek">
-            <!-- <div class="exp-content"> -->
-            <h3>Web Developer</h3><img class="arrow" src="images/triangle-filled-svgrepo-com.svg" />
-            <h5>GAOTek Inc.</h5>
-            <p>February 2024 - Present</p>
-              <ul>
-                <li>Worked on programming and designing components and features for the website.</li>
-                <li>Worked on the development of the website using HTML, CSS, JavaScript, and PHP.</li>
-                <li>Implemented AJAX Search engine for products of an online store.</li>
-                <li>Implemented Google Analytics, and Google tags to position the website on the search console.</li>
-              </ul>
-            <!-- </div> -->
+              <!-- </div> -->
+            </div>
           </div>
         </div>
       </div>
     </div>
-    
-  </div>
 
-  <!-- My Skills-->
+    <!-- My Skills-->
 
-  
+    <!-- My Certificates -->
 
-  <!-- My Certificates -->
-
-  <div class="myCertificates" id="myCertificates">
-    <h1 class="section-title">My Certificates:</h1>
-    <!-- card01 -->
-    <div class="cards">
-
-      <div class="card border-dark mb-3">
-        <div class="card-header">Certificate</div>
-        <div class="card-body">
-          <h5 class="card-title">Data Structures & Algorithms</h5>
-          <p class="card-text">Intensive training on Data Structures and Search algorithms using Python.</p>
-          <img src="images/Python Data Structures.jpg">
+    <div class="myCertificates" id="myCertificates">
+      <h1 class="section-title">My Certificates:</h1>
+      <!-- card01 -->
+      <div class="cards">
+        <div class="card border-dark mb-3">
+          <div class="card-header">Certificate</div>
+          <div class="card-body">
+            <h5 class="card-title">Data Structures & Algorithms</h5>
+            <p class="card-text">
+              Intensive training on Data Structures and Search algorithms using
+              Python.
+            </p>
+            <img src="images/Python Data Structures.jpg" />
+          </div>
         </div>
 
-      </div>
-
-      <!-- card02 -->
-      <div class="card border-dark mb-3">
-        <div class="card-header">Certificate</div>
-        <div class="card-body">
-          <h5 class="card-title">Scrum Advanced</h5>
-          <p class="card-text">Advanced training on Scrum framework.</p>
-          <img src="images/CertificateOfCompletion_Scrum Advanced.jpg">
+        <!-- card02 -->
+        <div class="card border-dark mb-3">
+          <div class="card-header">Certificate</div>
+          <div class="card-body">
+            <h5 class="card-title">Scrum Advanced</h5>
+            <p class="card-text">Advanced training on Scrum framework.</p>
+            <img src="images/CertificateOfCompletion_Scrum Advanced.jpg" />
+          </div>
         </div>
-      </div>
 
-      <!-- card03 -->
+        <!-- card03 -->
 
-      <div class="card border-dark mb-3">
-        <div class="card-header">Certificate</div>
-        <div class="card-body">
-          <h5 class="card-title">Advanced Python: working with databases</h5>
-          <p class="card-text">Advanced databases management using Python.</p>
-          <img src="images/Python Woking with Databases.jpg">
+        <div class="card border-dark mb-3">
+          <div class="card-header">Certificate</div>
+          <div class="card-body">
+            <h5 class="card-title">Advanced Python: working with databases</h5>
+            <p class="card-text">Advanced databases management using Python.</p>
+            <img src="images/Python Woking with Databases.jpg" />
+          </div>
         </div>
-      </div>
 
-      <!-- card04 -->
-      <div class="card border-dark mb-3">
-        <div class="card-header">Certificate</div>
-        <div class="card-body">
-          <h5 class="card-title">Django Essential Training</h5>
-          <p class="card-text">Training on Django Framework. Model View web applications integrating Databases.</p>
-          <img src="images/Django Training.jpg">
+        <!-- card04 -->
+        <div class="card border-dark mb-3">
+          <div class="card-header">Certificate</div>
+          <div class="card-body">
+            <h5 class="card-title">Django Essential Training</h5>
+            <p class="card-text">
+              Training on Django Framework. Model View web applications
+              integrating Databases.
+            </p>
+            <img src="images/Django Training.jpg" />
+          </div>
         </div>
-      </div>
 
-      <!-- card05 -->
-      <div class="card border-dark mb-3">
-        <div class="card-header">Certificate</div>
-        <div class="card-body">
-          <h5 class="card-title">Advanced Pyhton: Working With Data</h5>
-          <p class="card-text">Advanced Data manipulation using Python.</p>
-          <img src="images/Python Working with Data.jpg">
+        <!-- card05 -->
+        <div class="card border-dark mb-3">
+          <div class="card-header">Certificate</div>
+          <div class="card-body">
+            <h5 class="card-title">Advanced Pyhton: Working With Data</h5>
+            <p class="card-text">Advanced Data manipulation using Python.</p>
+            <img src="images/Python Working with Data.jpg" />
+          </div>
         </div>
-      </div>
 
-      <!-- card06 -->
-      <div class="card border-dark mb-3">
-        <div class="card-header">Certificate</div>
-        <div class="card-body">
-          <h5 class="card-title">Learning Node.js</h5>
-          <p class="card-text">Node.js Training. Use of Databases, APIs, and more.</p>
-          <img src="images/Learning Node Js.jpg">
+        <!-- card06 -->
+        <div class="card border-dark mb-3">
+          <div class="card-header">Certificate</div>
+          <div class="card-body">
+            <h5 class="card-title">Learning Node.js</h5>
+            <p class="card-text">
+              Node.js Training. Use of Databases, APIs, and more.
+            </p>
+            <img src="images/Learning Node Js.jpg" />
+          </div>
         </div>
-      </div>
 
-      <!-- card07 -->
+        <!-- card07 -->
 
-      <!-- <div class="card text-bg-dark mb-3">
+        <!-- <div class="card text-bg-dark mb-3">
         <div class="card-header">Header</div>
         <div class="card-body">
           <h5 class="card-title">Dark card title</h5>
@@ -297,8 +485,8 @@
         </div>
       </div> -->
 
-      <!-- card08 -->
-      <!-- <div class="card text-bg-light mb-3">
+        <!-- card08 -->
+        <!-- <div class="card text-bg-light mb-3">
         <div class="card-header">Header</div>
         <div class="card-body">
           <h5 class="card-title text-dark">Light card title</h5>
@@ -307,228 +495,397 @@
           <img src="images/Python Data Structures.jpg">
         </div>
       </div> -->
+      </div>
+      <a class="know-more" href="#myProjects">LOOK AT MY PROJECTS</a>
     </div>
-    <a class="know-more" href="#myProjects">LOOK AT MY PROJECTS</a>
-  </div>
 
-  <!-- My Projects -->
+    <!-- My Projects -->
 
-  <div class="myProjects" id="myProjects">
-    <h1 class="section-title">My Projects: </h1>
-    <div class="projects">
-
-      <div class="gradient-cards">
-        <div class="projectCard">
-          <div class="container-card bg-blue-box">
-            <img class="project-photo" src="images/4rev01.png" alt="4Revolution logo">
-            <div class="project-desc">
-              <p class="card-title">4Revolution Online Store</p>
-              <p class="card-description">Responsive online wristwatches store with cart, shipping and delivery
-                options depending on the Location inside Canada.</p>
+    <div class="myProjects" id="myProjects">
+      <h1 class="section-title">My Projects:</h1>
+      <div class="projects">
+        <div class="gradient-cards">
+          <div class="projectCard">
+            <div class="container-card bg-blue-box">
+              <img
+                class="project-photo"
+                src="images/thcc-home-page.png"
+                alt="4Revolution logo"
+              />
+              <div class="project-desc">
+                <p class="card-title">Toronto Hispanic Chamber of Commerce</p>
+                <p class="card-description">
+                  Great organizational website with clean and powerful UX
+                  design.
+                </p>
                 <div class="project-technologies">
-                  <img src="images/html-5-svgrepo-com.svg" alt="html logo">
-                  <img src="images/css3-svgrepo-com.svg" alt="css logo" >
-                  <img src="images/js-svgrepo-com.svg" alt="js logo">
-                  <img src="images/php-svgrepo-com.svg" alt="php logo">
-                  <img src="images/wordpress-svgrepo-com.svg" alt="wordpress logo">
+                  <img src="images/html-5-svgrepo-com.svg" alt="html logo" />
+                  <img src="images/css3-svgrepo-com.svg" alt="css logo" />
+                  <img src="images/js-svgrepo-com.svg" alt="js logo" />
+                  <img src="images/php-svgrepo-com.svg" alt="php logo" />
+                  <img
+                    src="images/wordpress-svgrepo-com.svg"
+                    alt="wordpress logo"
+                  />
                 </div>
-              <a class="clickable-project" href="https://www.4revolutionstore.com/" target="_blank" rel="noopener">View website</a>
-            </div>
-          </div>
-        </div>
-        
-      
-        <div class="projectCard">
-          <div class="container-card bg-green-box">
-            <img class="project-photo" src="images/inst-mem01.png" alt="inst-mem"/>
-            <div class="project-desc">
-              <p class="card-title">Alzheimer's Institute Website</p>
-              <p class="card-description">Organization Website containing Institute information, contact forms, blogs and
-                donations through PyPal.</p>
-              <div class="project-technologies">
-                <img src="images/html-5-svgrepo-com.svg" alt="html logo">
-                <img src="images/css3-svgrepo-com.svg" alt="css logo">
-                <img src="images/js-svgrepo-com.svg" alt="js logo">
-                <img src="images/php-svgrepo-com.svg" alt="php logo">
-                <img src="images/wordpress-svgrepo-com.svg" alt="wordpress logo">
+                <a
+                  class="clickable-project"
+                  href="https://www.thcc.ca/"
+                  target="_blank"
+                  rel="noopener"
+                  >View website</a
+                >
               </div>
-              
-              <a class="clickable-project" href="https://institutodelamemoria.org.mx/" target="_blank" rel="noopener">View website</a>
             </div>
           </div>
-        </div>
-
-        <div class="projectCard">
-          <div class="container-card bg-white-box">
-            <img class="project-photo" src="images/4revapp02.png"/>
-            <div class="project-desc">
-              <p class="card-title">ERP management system AppSheet Mobile/Web</p>
-              <p class="card-description">Web app available in mobile devices and browsers.</p>
-              <ul class="card-list">
-                <li>Create, Read, Update and Delete (CRUD) features.</li>
-                <li>Secure password login (password encryption)</li>
-                <li> Data analysis and statistics.</li>
-              </ul>
-              <div class="project-technologies">
-                <img src="images/AppSheet_Logo.png" alt="appsheet logo">
+          <div class="projectCard">
+            <div class="container-card bg-blue-box">
+              <img
+                class="project-photo"
+                src="images/carpa-home-page.png"
+                alt="4Revolution logo"
+              />
+              <div class="project-desc">
+                <p class="card-title">CARPA Solutions</p>
+                <p class="card-description">
+                  Organizational Website for receiving quotes and easy contact.
+                </p>
+                <div class="project-technologies">
+                  <img src="images/html-5-svgrepo-com.svg" alt="html logo" />
+                  <img src="images/css3-svgrepo-com.svg" alt="css logo" />
+                  <img src="images/js-svgrepo-com.svg" alt="js logo" />
+                  <img src="images/php-svgrepo-com.svg" alt="php logo" />
+                  <img
+                    src="images/wordpress-svgrepo-com.svg"
+                    alt="wordpress logo"
+                  />
+                </div>
+                <a
+                  class="clickable-project"
+                  href="https://www.carpasolutions.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >View website</a
+                >
               </div>
-              <a class="clickable-project" href="https://www.appsheet.com/start/014bf611-3513-4619-b81c-bd1ecddbcf88#appName=UntitledApp-2023255&group=%5B%5D&page=deck&sort=%5B%7B%22Column%22%3A%22Fecha%22%2C%22Order%22%3A%22Descending%22%7D%5D&table=Venta&view=Ventas" target="_blank" rel="noopener">
-                View app</a>
             </div>
           </div>
-        </div>
-
-        <div class="projectCard">
-          <div class="container-card">
-            <img class="project-photo" src="images/gamesJavaApp01.png" alt="html logo">
-            <div class="project-desc">
-              <p class="card-title">Video Games App JavaFX</p>
-              <p class="card-description">JavaFX Application Using Twitch API with multiple requests.</p>
-              <ul class="card-list">
-                <li>Search and filter games by category.</li>
-                <li>Look for a game writing any word that relates the game.</li>
-                <li>Mulpitple windows displaying all the information and images from the selected game.</li>
-              </ul>
-              <div class="project-technologies">
-                <img src="images/java-4-logo-svgrepo-com.svg" alt="java logo">
-                <img src="images/mysql-logo-svgrepo-com.svg" alt="mysql logo">
+          <div class="projectCard">
+            <div class="container-card bg-blue-box">
+              <img
+                class="project-photo"
+                src="images/4revolution-home-page.png"
+                alt="4Revolution logo"
+              />
+              <div class="project-desc">
+                <p class="card-title">4Revolution Online Store</p>
+                <p class="card-description">
+                  Responsive online wristwatches store with cart, shipping and
+                  delivery options depending on the Location inside Canada.
+                </p>
+                <div class="project-technologies">
+                  <img src="images/html-5-svgrepo-com.svg" alt="html logo" />
+                  <img src="images/css3-svgrepo-com.svg" alt="css logo" />
+                  <img src="images/js-svgrepo-com.svg" alt="js logo" />
+                  <img src="images/php-svgrepo-com.svg" alt="php logo" />
+                  <img
+                    src="images/wordpress-svgrepo-com.svg"
+                    alt="wordpress logo"
+                  />
+                </div>
+                <a
+                  class="clickable-project"
+                  href="https://www.4revolutionstore.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >View website</a
+                >
               </div>
-              <a class="clickable-project" href="https://github.com/Crabbier/CSP_Games" target="_blank" rel="noopener">Get Code</a>
             </div>
           </div>
-        </div>
 
-        <div class="projectCard">
-          <div class="container-card bg-green-box">
-            <img class="project-photo" src="images/notes-svgrepo-com (4).svg" alt="notes logo"/>
-            <div class="project-desc">
-              <p class="card-title">Notes Web Application Django</p>
-              <p class="card-description">Web application for database manipulation using Django.</p>
-              <ul class="card-list">
-                <li>Create, Read, Update and Delete (CRUD) features.</li>
-                <li>Secure password login (password encryption)</li>
-                <li>Use of cookies for user login.</li>
-              </ul>
-              <div class="project-technologies">
-                <img src="images/python-svgrepo-com.svg" alt="Python logo">
-                <img src="images/django-svgrepo-com.svg" alt="django logo">
-                <img src="images/html-5-svgrepo-com.svg" alt="html logo">
-                <img src="images/css3-svgrepo-com.svg" alt="css logo">
-                <img src="images/mysql-logo-svgrepo-com.svg" alt="mysql logo">
-                <img src="images/bootstrap-fill-svgrepo-com (2).svg" alt="bootstrap logo">
+          <div class="projectCard">
+            <div class="container-card bg-green-box">
+              <img
+                class="project-photo"
+                src="images/inst-mem01.png"
+                alt="inst-mem"
+              />
+              <div class="project-desc">
+                <p class="card-title">Alzheimer's Institute Website</p>
+                <p class="card-description">
+                  Organization Website containing Institute information, contact
+                  forms, blogs and donations through PayPal.
+                </p>
+                <div class="project-technologies">
+                  <img src="images/html-5-svgrepo-com.svg" alt="html logo" />
+                  <img src="images/css3-svgrepo-com.svg" alt="css logo" />
+                  <img src="images/js-svgrepo-com.svg" alt="js logo" />
+                  <img src="images/php-svgrepo-com.svg" alt="php logo" />
+                  <img
+                    src="images/wordpress-svgrepo-com.svg"
+                    alt="wordpress logo"
+                  />
+                </div>
+
+                <a
+                  class="clickable-project"
+                  href="https://institutodelamemoria.org.mx/"
+                  target="_blank"
+                  rel="noopener"
+                  >View website</a
+                >
               </div>
-              <a class="clickable-project" href="https://github.com/Crabbier/NotesApp" target="_blank">Get Code</a>
             </div>
           </div>
-        </div>
-        
 
-          
-        <div class="projectCard">
-          <div class="container-card bg-white-box">
-            <img class="project-photo" src="images/database-svgrepo-com.svg"/>
-            <div class="project-desc">
-              <p class="card-title">Data Management System PHP</p>
-              <p class="card-description">PHP biult website connected to a mysql Database.</p>
-              <ul class="card-list">
-                <li>Create, Read, Update and Delete (CRUD) features.</li>
-                <li>Secure password login (password encryption)</li>
-                <li>Use of cookies for user login.</li>
-              </ul>
-              <div class="project-technologies">
-                <img src="images/html-5-svgrepo-com.svg" alt="html logo">
-                <img src="images/css3-svgrepo-com.svg" alt="css logo">
-                <img src="images/mysql-logo-svgrepo-com.svg" alt="mysql logo">
-                <img src="images/php-svgrepo-com.svg" alt="php logo">
+          <div class="projectCard">
+            <div class="container-card bg-white-box">
+              <img class="project-photo" src="images/4revapp02.png" />
+              <div class="project-desc">
+                <p class="card-title">
+                  ERP management system AppSheet Mobile/Web
+                </p>
+                <p class="card-description">
+                  Web app available in mobile devices and browsers.
+                </p>
+                <ul class="card-list">
+                  <li>Create, Read, Update and Delete (CRUD) features.</li>
+                  <li>Secure password login (password encryption)</li>
+                  <li>Data analysis and statistics.</li>
+                </ul>
+                <div class="project-technologies">
+                  <img src="images/AppSheet_Logo.png" alt="appsheet logo" />
+                </div>
+                <a
+                  class="clickable-project"
+                  href="https://www.appsheet.com/start/014bf611-3513-4619-b81c-bd1ecddbcf88#appName=UntitledApp-2023255&group=%5B%5D&page=deck&sort=%5B%7B%22Column%22%3A%22Fecha%22%2C%22Order%22%3A%22Descending%22%7D%5D&table=Venta&view=Ventas"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View app</a
+                >
               </div>
-
-              <a class="clickable-project" href="https://github.com/Crabbier/SecurityAndFileManagement" target="_blank">Get Code</a>
             </div>
           </div>
-        </div>
-          
-        
-        <div class="projectCard">
-          <div class="container-card bg-yellow-box">
-            <img class="project-photo" src="images/poker-svgrepo-com.svg" alt="html logo">
-            <div class="project-desc">
-              <p class="card-title">Balck Jack console game JAVA</p>
-              <p class="card-description">Gambling game built in console.</p>
-              <div class="project-technologies">
-                <img src="images/java-4-logo-svgrepo-com.svg" alt="java logo" height="25vw">
+
+          <div class="projectCard">
+            <div class="container-card">
+              <img
+                class="project-photo"
+                src="images/gamesJavaApp01.png"
+                alt="html logo"
+              />
+              <div class="project-desc">
+                <p class="card-title">Video Games App JavaFX</p>
+                <p class="card-description">
+                  JavaFX Application Using Twitch API with multiple requests.
+                </p>
+                <ul class="card-list">
+                  <li>Search and filter games by category.</li>
+                  <li>
+                    Look for a game writing any word that relates the game.
+                  </li>
+                  <li>
+                    Mulpitple windows displaying all the information and images
+                    from the selected game.
+                  </li>
+                </ul>
+                <div class="project-technologies">
+                  <img
+                    src="images/java-4-logo-svgrepo-com.svg"
+                    alt="java logo"
+                  />
+                  <img
+                    src="images/mysql-logo-svgrepo-com.svg"
+                    alt="mysql logo"
+                  />
+                </div>
+                <a
+                  class="clickable-project"
+                  href="https://github.com/Crabbier/CSP_Games"
+                  target="_blank"
+                  rel="noopener"
+                  >Get Code</a
+                >
               </div>
-              <a class="clickable-project" href="https://github.com/Crabbier/BlackJackGame" target="_blank">Get Code</a>
+            </div>
+          </div>
+
+          <div class="projectCard">
+            <div class="container-card bg-green-box">
+              <img
+                class="project-photo"
+                src="images/notes-svgrepo-com (4).svg"
+                alt="notes logo"
+              />
+              <div class="project-desc">
+                <p class="card-title">Notes Web Application Django</p>
+                <p class="card-description">
+                  Web application for database manipulation using Django.
+                </p>
+                <ul class="card-list">
+                  <li>Create, Read, Update and Delete (CRUD) features.</li>
+                  <li>Secure password login (password encryption)</li>
+                  <li>Use of cookies for user login.</li>
+                </ul>
+                <div class="project-technologies">
+                  <img src="images/python-svgrepo-com.svg" alt="Python logo" />
+                  <img src="images/django-svgrepo-com.svg" alt="django logo" />
+                  <img src="images/html-5-svgrepo-com.svg" alt="html logo" />
+                  <img src="images/css3-svgrepo-com.svg" alt="css logo" />
+                  <img
+                    src="images/mysql-logo-svgrepo-com.svg"
+                    alt="mysql logo"
+                  />
+                  <img
+                    src="images/bootstrap-fill-svgrepo-com (2).svg"
+                    alt="bootstrap logo"
+                  />
+                </div>
+                <a
+                  class="clickable-project"
+                  href="https://github.com/Crabbier/NotesApp"
+                  target="_blank"
+                  >Get Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="projectCard">
+            <div class="container-card bg-white-box">
+              <img
+                class="project-photo"
+                src="images/database-svgrepo-com.svg"
+              />
+              <div class="project-desc">
+                <p class="card-title">Data Management System PHP</p>
+                <p class="card-description">
+                  PHP biult website connected to a mysql Database.
+                </p>
+                <ul class="card-list">
+                  <li>Create, Read, Update and Delete (CRUD) features.</li>
+                  <li>Secure password login (password encryption)</li>
+                  <li>Use of cookies for user login.</li>
+                </ul>
+                <div class="project-technologies">
+                  <img src="images/html-5-svgrepo-com.svg" alt="html logo" />
+                  <img src="images/css3-svgrepo-com.svg" alt="css logo" />
+                  <img
+                    src="images/mysql-logo-svgrepo-com.svg"
+                    alt="mysql logo"
+                  />
+                  <img src="images/php-svgrepo-com.svg" alt="php logo" />
+                </div>
+
+                <a
+                  class="clickable-project"
+                  href="https://github.com/Crabbier/SecurityAndFileManagement"
+                  target="_blank"
+                  >Get Code</a
+                >
+              </div>
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
-  </div>
 
-  <!-- Contact Me -->
+    <!-- Contact Me -->
 
-  <div class="myContact" id="myContact">
-    <div class="myForm">
-      <form action="https://getform.io/f/c402faae-4e0a-4531-ad88-dd200522e850" method="POST">
-        <h1 class="section-title">Contact me: </h1>
-        <div class="mb-3">
-          <label for="email" class="form-label">Your Email Address</label>
-          <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" autocomplete="email">
-        
-        </div>
+    <div class="myContact" id="myContact">
+      <div class="myForm">
+        <form
+          action="https://getform.io/f/c402faae-4e0a-4531-ad88-dd200522e850"
+          method="POST"
+        >
+          <h1 class="section-title">Contact me:</h1>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email Address</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              autocomplete="email"
+            />
+          </div>
 
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp" autocomplete="name">
-        </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              id="name"
+              aria-describedby="emailHelp"
+              autocomplete="name"
+            />
+          </div>
 
-        <div class="mb-3">
-          <label for="company" class="form-label">Company (optional)</label>
-          <input type="text" name="company" class="form-control" id="company" aria-describedby="emailHelp">
-        </div>
+          <div class="mb-3">
+            <label for="company" class="form-label">Company (optional)</label>
+            <input
+              type="text"
+              name="company"
+              class="form-control"
+              id="company"
+              aria-describedby="emailHelp"
+            />
+          </div>
 
-        <div class="mb-3">
-          <label for="subject" class="form-label">Subject</label>
-          <input type="text" name="subject" class="form-control" id="subject">
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Your message</label>
-          <textarea class="form-control" name="message" id="message" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send</button>
-      </form>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              class="form-control"
+              id="subject"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your message</label>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+
+      <div class="myData">
+        <p>
+          Carlos Serrano
+          <br />
+          location: Toronto, Canada.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130493.8211732075!2d-79.49532997021706!3d43.720246879378315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20Ontario!5e0!3m2!1ses-419!2sca!4v1707849064162!5m2!1ses-419!2sca"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
 
-    <div class="myData">
-      <p>
-        Carlos Serrano
-        <br>
-        location: Toronto, Canada.
-      </p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130493.8211732075!2d-79.49532997021706!3d43.720246879378315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20Ontario!5e0!3m2!1ses-419!2sca!4v1707849064162!5m2!1ses-419!2sca" 
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    </div>
-
-
-  </div>
-
-
-
-  <main>
-
-
-  </main>
-  <footer>
-    <p>Copyright© 2024 - Carlos Serrano.</p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="script/script.js" defer></script>
-</body>
-
-
+    <main></main>
+    <footer>
+      <p>Copyright© 2024 - Carlos Serrano.</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js" defer></script>
+    <script src="script/sections.js" defer></script>
+  </body>
 </html>

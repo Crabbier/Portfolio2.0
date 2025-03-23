@@ -42,14 +42,13 @@ function downloadResume() {
 
 function sendEmail() {
   Email.send({
-    Host : "e9a9b2a7-d0b6-4b9e-a6c0-e8d8a9a8c6d8",
-    
-    To : 'qpmzj@example.com',
-    From : "qpmzj@example.com",
-    Subject : "Hello",
-    Body : "And this is the body"
-
-  }).then
+    Host: "e9a9b2a7-d0b6-4b9e-a6c0-e8d8a9a8c6d8",
+    To: 'qpmzj@example.com',
+    From: "qpmzj@example.com",
+    Subject: "Hello",
+    Body: "And this is the body"
+  }).then((message) => alert("Email sent successfully!"))
+    .catch((error) => console.error("Error sending email:", error));
 }
 
 /*********************************************************
