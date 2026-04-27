@@ -458,7 +458,7 @@ h6,
 p {
   grid-column-start: 1;
   grid-column-end: 2;
-  font-size: 70%;
+  font-size: 100%;
 }
 
 .edu img {
@@ -526,14 +526,13 @@ p {
 }
 
 .exp h3,
-h5,
-ul {
+.exp h5,
+.exp ul {
   text-align: left;
   transition: all 0.2s;
   width: 100%;
   grid-column-start: 1;
   grid-column-end: 2;
-  font-size: 100%;
 }
 
 .exp h3 {
@@ -550,7 +549,7 @@ ul {
 .myExperience ul {
   transition: all 0.3s out;
   text-align: left;
-  font-size: 80%;
+  font-size: 100%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -943,8 +942,7 @@ ul {
 .card-title {
   font-weight: 600;
   color: white;
-  letter-spacing: -0.02em;
-  line-height: 40px;
+  letter-spacing: 0.02em;
   font-style: normal;
   font-size: 22px;
   padding-bottom: 8px;
@@ -957,7 +955,6 @@ ul {
   font-weight: 300;
   line-height: 20px;
   color: hsla(0, 0%, 100%, 0.5);
-  font-size: 12px;
 }
 
 .card-list {
